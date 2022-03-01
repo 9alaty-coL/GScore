@@ -10,7 +10,7 @@ const LeaderBoard = props => {
 
     useEffect(() => {
         sendRequest()
-    }, [])
+    }, [sendRequest])
 
     if (status === 'spending'){
         table = <LoadingSpinner />

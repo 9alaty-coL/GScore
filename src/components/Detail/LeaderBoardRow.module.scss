@@ -1,0 +1,33 @@
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    .clubInfo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        img{
+            width: 2rem;
+        }
+        span:first-child{
+            width: 1.5rem;
+        }
+        span{
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+    }
+    .points{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        span{
+            font-size: 1.2rem;
+            padding: 1rem 0.3rem;
+            min-width: 2rem;
+        }
+    }
+}

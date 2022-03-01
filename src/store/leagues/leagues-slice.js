@@ -20,13 +20,13 @@ const initialLeagueState = [
       logoSource: "/Leagues-logo/laliga.png",
     },
     {
-      id: "2030",
-      slug: "league-1",
-      name: "League 1",
+      id: "2015",
+      slug: "ligue-1",
+      name: "Ligue 1",
       logoSource: "/Leagues-logo/league1.png",
     },
     {
-      id: "2012",
+      id: "2002",
       slug: "bundes-liga",
       name: "Bundes Liga",
       logoSource: "/Leagues-logo/bundesliga.png",

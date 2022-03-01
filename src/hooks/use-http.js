@@ -54,7 +54,7 @@ const useHttp = (url) => {
         } catch (error) {
             dispatch({type: 'ERROR', error: error.message || 'something went wrong!'})
         }
-    })
+    }, [url])
     return {
         data: status.data,
         error: status.error,
