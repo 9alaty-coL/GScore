@@ -1,0 +1,29 @@
+.NavItem{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 0.2rem;
+    cursor: pointer;
+    .NavLink{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0.2rem 0.2rem;
+
+        img{
+            height: 50px;
+            margin-right: 1rem;
+        }
+        span{
+            color: black;
+        }
+    }
+    .linkActive{
+        box-shadow: 0px 0px 10px 2px #333;
+    }
+
+    &>.NavLink:hover{
+        box-shadow: 0px 0px 10px 1px #333;
+    }
+}

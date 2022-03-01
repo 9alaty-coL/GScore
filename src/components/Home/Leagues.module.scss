@@ -1,0 +1,17 @@
+.allLeague {
+    padding: 50px 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ccc;
+}
+
+@media screen and (max-width: 640px){
+    .allLeague{
+        flex-direction: column;
+        height: auto;
+    }
+}

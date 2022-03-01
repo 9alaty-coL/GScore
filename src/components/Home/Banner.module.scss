@@ -1,0 +1,76 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7rem;
+  padding-top: 3rem;
+  cursor: default;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+  .banner__logo {
+    img {
+      width: 10rem;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+    }
+  }
+  .banner__name {
+    span {
+      font-family: "Courier New", Courier, monospace;
+      filter: drop-shadow(0px 0px 10px #ccc);
+      font-size: 8.5rem;
+      margin-left: 3rem;
+      font-weight: bold;
+      background: -webkit-linear-gradient(left, #009dab 60%, #333);
+      // background: linear-gradient(to right, #009DAB 0%, #333 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #fff;
+    }
+  }
+}
+
+.small{
+  padding:0.3rem 1rem;
+  margin:0;
+  cursor: pointer;
+  .banner__logo{
+    img{
+      width: 4rem;
+    }
+  }
+  .banner__name{
+    span{
+      font-size: 3rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .banner {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    .banner__logo {
+      img {
+        width: 5rem;
+      }
+    }
+    .banner__name {
+      span {
+        font-size: 5rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
