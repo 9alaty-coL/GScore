@@ -12,7 +12,7 @@ const reducer = (state, action) => {
     switch(action.type){
         case 'SEND':
             return {
-                status: 'pending',
+                status: 'spending',
                 data: null,
                 error: null,
             }
@@ -40,6 +40,7 @@ const useHttp = (url) => {
     const [status, dispatch] = useReducer(reducer, initialStatus)
     const sendRequest = useCallback( async() => {
         dispatch({type: 'SEND'})
+        
         try {
             const response = await fetch(url, {
                 headers: {
