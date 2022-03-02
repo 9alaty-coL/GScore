@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import LoadingSpinner from '../UI/LoadingSpinner'
 
 const LeaderBoard = props => {
-    const {status, error, data, sendRequest} = useHttp(`http://api.football-data.org/v2/competitions/${props.leagueId}/standings`)
+    const {status, error, data, sendRequest} = useHttp(`https://api.football-data.org/v2/competitions/${props.leagueId}/standings`)
     let table
 
     useEffect(() => {
