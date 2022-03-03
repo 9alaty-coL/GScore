@@ -58,7 +58,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  .banner {
+  .banner:not(.small) {
     padding-top: 1rem;
     margin-bottom: 2rem;
     .banner__logo {

@@ -27,3 +27,21 @@
         box-shadow: 0px 0px 10px 1px #333;
     }
 }
+
+@media screen and (max-width: 720px) {
+    .NavItem{
+        .NavLink{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 15px 5px 5px;
+            img{
+                height: 40px;
+                margin-right: 0.4rem;
+            }
+            span{
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

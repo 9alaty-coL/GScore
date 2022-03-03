@@ -1,16 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialLeagueState = [
-    {
-      id: "2001",
-      slug: "champions-league",
-      name: "Champions League",
-      logoSource: "/Leagues-logo/c1.png",
-    },
-    {
-      id: "2021",
-      slug: "premier-league",
-      name: "Premier League",
+  {
+    id: "2021",
+    slug: "premier-league",
+    name: "Premier League",
       logoSource: "/Leagues-logo/epl.png",
     },
     {
@@ -43,8 +37,14 @@ const initialLeagueState = [
       name: "Primeira Liga",
       logoSource: "/Leagues-logo/primeiraliga.png",
     },
+    {
+      id: "2003",
+      slug: "eredivisie",
+      name: "Eredivisie",
+      logoSource: "/Leagues-logo/eredivisie.png",
+    },
   ];
-
+  
 const leaguesSlice = createSlice({
     name: 'leagues',
     initialState: initialLeagueState,
