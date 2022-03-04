@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# GScore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that helps people follow the top 7 football leagues in Asia
+<p float="left">
+    <img src="./public/Leagues-logo/epl.png" width="60px">
+    <img src="./public/Leagues-logo/laliga.png" width="60px">
+    <img src="./public/Leagues-logo/league1.png" width="60px">
+    <img src="./public/Leagues-logo/bundesliga.png" width="60px">
+    <img src="./public/Leagues-logo/seriea.png" width="60px">
+    <img src="./public/Leagues-logo/eredivisie.png" width="60px">
+    <img src="./public/Leagues-logo/primeiraliga.png" width="60px">
+</p>
+
+## API resource
+
+[<img src="https://www.football-data.org/assets/logo.jpg" width="200px">](https://www.football-data.org/)
+RESTful. Reliable. Free to use. Easy to integrate.
 
 ## Available Scripts
 
@@ -39,32 +53,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Deployment: [GScore](https://gscore.netlify.app/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="./screenshots/home.jpeg" width="500px">
