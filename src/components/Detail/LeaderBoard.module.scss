@@ -1,18 +1,6 @@
 .leaderBoard{
-    margin: 50px 200px;
     // overflow-x: scroll;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
 
-@media screen and (max-width: 1024px) {
-    .leaderBoard{
-        margin: 20px 100px;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .leaderBoard{
-        margin: 20px 5px;
-    }
-}

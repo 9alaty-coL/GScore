@@ -25,8 +25,13 @@ const Header = () => {
           </Link>
         </div>
         <div
-          className={classes.dropdown}
-          onClick={setShowDropdown.bind(null, (prev) => !prev)}
+          tabIndex="0"
+          className={`${classes.dropdown} ${showDropdown ? classes.active : ""}`}
+          onClick={e=>{
+            setShowDropdown(prev => !prev)
+            e.target.focus()
+          }}
+          onBlur={()=>setShowDropdown(false)}
         >
           <div className={classes.menu}></div>
         </div>

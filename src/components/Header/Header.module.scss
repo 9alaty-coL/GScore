@@ -52,6 +52,8 @@
         height: 3px;
         background-color: #ccc;
         transform: translateY(-12px);
+        transition: all ease 0.2s;
+
       }
       &:after {
         content: "";
@@ -60,6 +62,19 @@
         height: 3px;
         background-color: #ccc;
         transform: translateY(12px);
+        transition: all ease 0.2s;
+      }
+    }
+  }
+  .dropdown.active {
+
+    .menu {
+      background-color: transparent;
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
       }
     }
   }

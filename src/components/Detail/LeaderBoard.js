@@ -15,6 +15,9 @@ const LeaderBoard = (props) => {
   }, [sendRequest]);
 
   // console.log(status)
+  if (!props.leagueId) {
+    return <h1>League not found!</h1>;
+  }
 
   if (status === "spending") {
     table = (
