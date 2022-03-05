@@ -14,7 +14,7 @@ A web application that helps people follow the top 7 football leagues in Asia
 ## API resource
 
 [<img src="https://www.football-data.org/assets/logo.jpg" width="200px">](https://www.football-data.org/)
-RESTful. Reliable. Free to use. Easy to integrate.
+<br/><br/>RESTful. Reliable. Free to use. Easy to integrate.
 
 ## Available Scripts
 
