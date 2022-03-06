@@ -16,6 +16,16 @@ A web application that helps people follow the top 7 football leagues in Asia
 [<img src="https://www.football-data.org/assets/logo.jpg" width="200px">](https://www.football-data.org/)
 <br/><br/>RESTful. Reliable. Free to use. Easy to integrate.
 
+## Core features
+* Show the list of matches of selected season
+* Leaderboard
+* Top scorer
+* Login and bet your score prediction (Developing>>>)
+
+### Deployment: [GScore](https://gscore.netlify.app/)
+
+<img src="./screenshots/home.jpeg" width="500px">
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -53,6 +63,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Deployment: [GScore](https://gscore.netlify.app/)
-
-<img src="./screenshots/home.jpeg" width="500px">
