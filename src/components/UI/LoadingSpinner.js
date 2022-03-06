@@ -1,7 +1,7 @@
 import classes from './LoadingSpinner.module.css';
 
-const LoadingSpinner = () => {
-  return <div className={classes.spinner}></div>;
+const LoadingSpinner = props => {
+  return <div className={`${classes.spinner} ${props.small ? classes.small : ''}`} ></div>;
 }
 
 export default LoadingSpinner;

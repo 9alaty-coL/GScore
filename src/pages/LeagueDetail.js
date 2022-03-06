@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Header from "../components/Header/Header";
-import LeaderBoard from "../components/Detail/LeaderBoard";
-import OptionSelect from "../components/Detail/OptionSelect";
-import classes from "./LeagueDetail.module.scss";
 import { useState, useEffect } from "react";
+
+import classes from "./LeagueDetail.module.scss";
+
+import Header from "../components/Header/Header";
+import LeaderBoard from "../components/Detail/Leaderboard/LeaderBoard";
+import OptionSelect from "../components/Detail/Leaderboard/OptionSelect";
+import TopScorer from "../components/Detail/Topscorer/TopScorer";
 
 const LeagueDetail = () => {
   const [option, setOption] = useState(2)
@@ -22,12 +25,12 @@ const LeagueDetail = () => {
         setContent(<LeaderBoard leagueId={leagueId} />)
         break;
       case 3:
-        setContent(<p>Top scorer</p>)
+        setContent(<TopScorer leagueId={leagueId} />)
         break;
       default:
         break;
     }
-  }, [option])
+  }, [option, leagueId])
   
   return (
     <>

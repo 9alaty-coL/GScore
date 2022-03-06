@@ -1,0 +1,82 @@
+.row,
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  .clubInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+      width: 2rem;
+      padding: 0px 16px;
+    }
+    span:first-child {
+      width: 1.5rem;
+    }
+    span:nth-child(2){
+      width: 160px;
+    }
+    span {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+  }
+  .points {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      font-size: 1.2rem;
+      padding: 1rem 0.3rem;
+      min-width: 2rem;
+    }
+  }
+}
+
+.row:not(:last-child) {
+  border-bottom: solid rgba(204, 204, 204, 0.4) 1px;
+}
+
+.header {
+  border-radius: 10px 10px 0px 0px;
+  background: linear-gradient(
+    to bottom,
+    rgb(35, 3, 95) 70%,
+    rgba(66, 13, 189, 0.829)
+  );
+}
+
+@media screen and (max-width: 1024px) {
+  .row,
+  .header {
+    .clubInfo {
+      span {
+        font-size: 1rem;
+      }
+    }
+    .points {
+      span.third {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .row,
+  .header {
+    .clubInfo {
+      span {
+        font-size: 1rem;
+      }
+    }
+    .points {
+      span.third, span.secondary {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,15 +1,15 @@
-.leagueDetail{
+.leagueDetail, .topScorer{
     margin: 50px 200px;
 }
 
 @media screen and (max-width: 1024px) {
-    .leagueDetail{
+    .leagueDetail, .topScorer{
         margin: 20px 100px;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .leagueDetail{
+    .leagueDetail, .topScorer{
         margin: 20px 5px;
     }
 }

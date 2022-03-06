@@ -1,8 +1,8 @@
 import classes from "./LeaderBoard.module.scss";
 import LeaderBoardRow from "./LeaderBoardRow";
-import useHttp from "../../hooks/use-http";
+import useHttp from "../../../hooks/use-http";
 import { useEffect } from "react";
-import LoadingSpinner from "../UI/LoadingSpinner";
+import LoadingSpinner from "../../UI/LoadingSpinner";
 
 const LeaderBoard = (props) => {
   const { status, error, data, sendRequest } = useHttp(
@@ -19,7 +19,7 @@ const LeaderBoard = (props) => {
     return <h1>League not found!</h1>;
   }
 
-  if (status === "spending") {
+  if (status === "pending") {
     table = (
       <div className="centered">
         <LoadingSpinner />

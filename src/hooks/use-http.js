@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useReducer, useCallback } from "react";
 
 const TOKEN = '44c653df2a634ad1ab55c573f62981cc'
@@ -12,7 +13,7 @@ const reducer = (state, action) => {
     switch(action.type){
         case 'SEND':
             return {
-                status: 'spending',
+                status: 'pending',
                 data: null,
                 error: null,
             }
@@ -20,7 +21,7 @@ const reducer = (state, action) => {
         case 'ERROR':
             return {
                 status: 'completed',
-                data: null,
+                data: action.data,
                 error: action.error,
             }
             break
@@ -42,18 +43,21 @@ const useHttp = (url) => {
         dispatch({type: 'SEND'})
         
         try {
-            const response = await fetch(url, {
+            const data = await axios({
+                url:url,
                 headers: {
                     'X-Auth-Token': TOKEN,
-                }
+                },
             })
-            if (!response.ok){
-                dispatch({type: 'ERROR', error: 'something went wrong!'})
-            }
-            const data = await response.json()
-            dispatch({type: 'SUCCESS', data: data})
+            // console.log(data)
+            // if (!response.ok){
+            //     dispatch({type: 'ERROR', error: 'something went wrong!'})
+            // }
+            // const data = await response.json()
+            dispatch({type: 'SUCCESS', data: data.data})
         } catch (error) {
-            dispatch({type: 'ERROR', error: error.message || 'something went wrong!'})
+            dispatch({type: 'ERROR', error: 'Cause the free API. So there are only 10 requests per 40 seconds. Try again later!'})
+            console.dir(error.response)
         }
     }, [url])
     return {
