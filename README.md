@@ -16,6 +16,19 @@ A web application that helps people follow the top 7 football leagues in Asia
 [<img src="https://www.football-data.org/assets/logo.jpg" width="200px">](https://www.football-data.org/)
 <br/><br/>RESTful. Reliable. Free to use. Easy to integrate.
 
+## Technologies
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) 	![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+
+## Core features
+* Show the list of matches of selected season
+* Leaderboard
+* Top scorer
+* Login and bet your score prediction (Developing>>>)
+
+### Deployment: [GScore](https://gscore.netlify.app/)
+
+<img src="./screenshots/home.jpeg" width="500px">
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -53,6 +66,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Deployment: [GScore](https://gscore.netlify.app/)
-
-<img src="./screenshots/home.jpeg" width="500px">
