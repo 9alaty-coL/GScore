@@ -9,7 +9,7 @@ import LoadingSpinner from '../../UI/LoadingSpinner'
 const TopScorer = props => {
     const leagueId = props.leagueId
     const {data, error, status, sendRequest} = useHttp(`https://api-gscore.herokuapp.com/scorer/${leagueId}`)
-    const {data: teamData, error: teamError, status: teamStatus, sendRequest: teamSendRequest} = useHttp(`https://api.football-data.org/v2/competitions/${props.leagueId}/standings`)
+    const {data: teamData, error: teamError, status: teamStatus, sendRequest: teamSendRequest} = useHttp(`https://api-gscore.herokuapp.com/standing/${props.leagueId}`)
 
     useEffect(() => {
         sendRequest()

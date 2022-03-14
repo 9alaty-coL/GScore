@@ -44,6 +44,7 @@ const useHttp = (url) => {
         
         try {
             const data = await axios({
+                method: 'GET',
                 url:url,
                 headers: {
                     'X-Auth-Token': TOKEN,
