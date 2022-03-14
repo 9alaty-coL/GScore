@@ -6,7 +6,7 @@ import LoadingSpinner from "../../UI/LoadingSpinner";
 
 const LeaderBoard = (props) => {
   const { status, error, data, sendRequest } = useHttp(
-    `http://api-gscore.herokuapp.com/standing/${props.leagueId}`
+    `https://api-gscore.herokuapp.com/standing/${props.leagueId}`
   );
   let table;
 
