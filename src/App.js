@@ -5,7 +5,6 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
 import LeagueDetail from './pages/LeagueDetail'
 
-
 function App() {
   return (
     <Routes>

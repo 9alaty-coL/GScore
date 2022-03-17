@@ -8,6 +8,7 @@ import Header from "../components/Header/Header";
 import LeaderBoard from "../components/Detail/Leaderboard/LeaderBoard";
 import OptionSelect from "../components/Detail/Leaderboard/OptionSelect";
 import TopScorer from "../components/Detail/Topscorer/TopScorer";
+import Matches from "../components/Detail/Matches/Matches";
 
 const LeagueDetail = () => {
   const [option, setOption] = useState(2)
@@ -19,7 +20,7 @@ const LeagueDetail = () => {
   useEffect(() => {
     switch(option){
       case 1:
-        setContent(<p>Matches</p>)
+        setContent(<Matches leagueId={leagueId} />)
         break;
       case 2:
         setContent(<LeaderBoard leagueId={leagueId} />)
