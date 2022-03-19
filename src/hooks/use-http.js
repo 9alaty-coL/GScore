@@ -39,7 +39,7 @@ const reducer = (state, action) => {
 
 const useHttp = (url) => {
     const [status, dispatch] = useReducer(reducer, initialStatus)
-    const sendRequest = useCallback( async() => {
+    const sendRequest = useCallback( async(query = null) => {
         dispatch({type: 'SEND'})
         
         try {
@@ -49,6 +49,7 @@ const useHttp = (url) => {
                 headers: {
                     'X-Auth-Token': TOKEN,
                 },
+                params: query ?? null
             })
             // console.log(data)
             // if (!response.ok){

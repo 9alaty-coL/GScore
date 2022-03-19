@@ -1,37 +1,37 @@
 import { useState, useEffect, useCallback } from "react";
 
-const useInfiniteScroll = (callback) => {
-  const [isFetching, setIsFetching] = useState(true);
+const useInfiniteScroll = (callback, DOMElement) => {
+  const [isFetching, setIsFetching] = useState('initial');
 
   const handleScroll = () => {
     if (
-      Math.ceil(window.innerHeight + document.documentElement.scrollTop) >=
-      document.documentElement.offsetHeight
-    ) {
-      console.log('crolling')
+      Math.ceil(DOMElement.current.offsetHeight + DOMElement.current.scrollTop) >=
+      DOMElement.current.scrollHeight
+    ){
       setIsFetching(true);
     }
   };
 
   useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
+    DOMElement.current.addEventListener("scroll", handleScroll);
     return () => {
-      document.removeEventListener("scroll", handleScroll);
+      DOMElement.current.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const sendRequest = useCallback(async () => {
-    await callback()
-    setIsFetching(false)
-  }, [])
-
   useEffect(async () => {
-    if (isFetching){
-      sendRequest()
+    if (isFetching == 'initial'){
+      await callback()
+      DOMElement.current.scrollTop = DOMElement.current.offsetHeight / 2
+      setIsFetching(false)
+      return
     }
-  }, [isFetching, sendRequest, callback]);
+    if (isFetching){
+      await callback()
+    }
+  }, [isFetching]);
 
-  return { sendRequest};
+  return {setIsFetching};
 };
 
 export default useInfiniteScroll;
