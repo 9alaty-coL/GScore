@@ -27,6 +27,9 @@ const useInfiniteScroll = (callback, DOMElement) => {
       return
     }
     if (isFetching){
+      if (DOMElement.current.scrollHeight === DOMElement.current.clientHeight){
+        return
+      }
       await callback()
     }
   }, [isFetching]);

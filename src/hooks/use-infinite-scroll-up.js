@@ -19,6 +19,12 @@ const useInfiniteScrollUp = (callback, DOMElement) => {
   }, []);
 
   useEffect(async () => {
+    console.log('run')
+    if (DOMElement.current.scrollHeight <= DOMElement.current.clientHeight){
+      setIsFetching(false)
+
+      return
+    }
     if (isFetching){
       let prev = DOMElement.current.scrollHeight
       await callback()

@@ -6,11 +6,25 @@ import classes from "./Matches.module.scss";
 import Matchday from "./Matchday";
 import LoadingSpinner from "../../UI/LoadingSpinner";
 
+let go  = 1
+
 const Matches = (props) => {
   const matchesRef = useRef();
   const [minMatchday, setMinMatchday] = useState(null);
   const [maxMatchday, setMaxMatchday] = useState(null);
   const [currMatches, setCurrMatches] = useState([]);
+
+  useEffect(()=>{
+    if (go === 1){
+      go = 2
+    }else{
+      setCurrMatches([])
+      setMinMatchday(null)
+      setMaxMatchday(null)
+      setIsFetching('initial')
+    }
+
+  }, [props.leagueId])
 
 
   const {
@@ -38,7 +52,7 @@ const Matches = (props) => {
   }, [maxMatchday]);
 
   const insertMatchesHead = useCallback(async () => {
-    if (
+    if (minMatchday &&
       minMatchday < 1 &&
       currMatches[0][0].matchday == 1
     ) {
