@@ -5,7 +5,7 @@ const useInfiniteScroll = (callback) => {
 
   const handleScroll = () => {
     if (
-      window.innerHeight + document.documentElement.scrollTop >=
+      Math.ceil(window.innerHeight + document.documentElement.scrollTop) >=
       document.documentElement.offsetHeight
     ) {
       console.log('crolling')

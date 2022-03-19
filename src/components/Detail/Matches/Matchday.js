@@ -9,7 +9,13 @@ const Matchday = props => {
 
     return (
         <div className={classes.matchday}>
+        <div className={classes.title}>
+            <span>Matchday {props.data[0].matchday}</span>
+        </div>
+        <div className={classes.matches}>
             {matches}
+
+        </div>
         </div>
     )
 }

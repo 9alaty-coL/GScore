@@ -1,7 +1,14 @@
 .match{
+    &:hover{
+        background-color: #222;
+    }
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 3%;
     .homeTeam,.awayTeam{
+        width: 30%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -10,7 +17,27 @@
             width: 50px;
         }
         span{
+            text-align: center;
+        }
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .score{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 0.1rem;
+        }
+        span{
 
         }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .match{
+        width: 50%;
+        box-sizing: border-box;
     }
 }
