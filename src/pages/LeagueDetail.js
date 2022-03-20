@@ -34,13 +34,13 @@ const LeagueDetail = () => {
   }, [option, leagueId])
   
   return (
-    <>
+    <div className={classes.main}>
       <Header />
       <div className={classes.leagueDetail}>
         <OptionSelect option={option} setOption={setOption}/>
         {content}
       </div>
-    </>
+    </div>
   );
 };
 

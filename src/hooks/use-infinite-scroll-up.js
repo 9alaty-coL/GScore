@@ -27,6 +27,7 @@ const useInfiniteScrollUp = (callback, DOMElement) => {
     }
     if (isFetching){
       let prev = DOMElement.current.scrollHeight
+      
       await callback()
       DOMElement.current.scrollTop = DOMElement.current.scrollHeight - prev
     }

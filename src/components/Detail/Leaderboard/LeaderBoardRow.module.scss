@@ -66,10 +66,14 @@
   .header {
     .clubInfo {
       span {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
     .points {
+      span{
+        font-size: 0.9rem;
+
+      }
       span.third, span.secondary {
         display: none;
       }

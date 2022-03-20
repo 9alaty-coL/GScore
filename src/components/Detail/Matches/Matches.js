@@ -130,10 +130,11 @@ const Matches = (props) => {
       <div className={classes.loadingSpinner}>
         {status2 === "pending" && <LoadingSpinner />}
       </div>
-      <div className={matches}>{matches}</div>
+      <div className={classes.matches}>{matches}</div>
       <div className={classes.loadingSpinner}>
         {status === "pending" && <LoadingSpinner />}
       </div>
+
     </div>
   );
 };

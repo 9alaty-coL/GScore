@@ -1,5 +1,5 @@
 .leagueDetail, .topScorer{
-    margin: 50px 200px;
+    margin: 20px 200px 0px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -9,6 +9,9 @@
 }
 
 @media screen and (max-width: 640px) {
+    .main{
+        overflow-x: hidden;
+    }
     .leagueDetail, .topScorer{
         margin: 20px 5px;
     }

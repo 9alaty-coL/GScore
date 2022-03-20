@@ -1,4 +1,37 @@
 .main{
-    overflow: scroll;
-    height: 50vh;
+    overflow-y: scroll;
+    height: 73vh;
+    // scroll-behavior: smooth;
+    border-top: 4px solid rgba(204, 204, 204, 0.555);
+    border-bottom: 2px solid #ccc;
+
+    .loadingSpinner{
+      display: flex;
+      justify-content: center;
+    }
+
+    .matches{
+      margin-top: 10px;
+    }
 }
+
+.main::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .main::-webkit-scrollbar-track {
+    background: transparent;
+    border-right: solid 1px rgba(87, 84, 84, 0.466);
+  }
+  
+  /* Handle */
+  .main::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .main::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
