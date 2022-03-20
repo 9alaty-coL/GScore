@@ -17,9 +17,11 @@ const Match = (props) => {
     status = [<span style={{color:'red'}}>Postponed</span>, <span style={{color:'#888'}}>Undefined</span>]
   }
 
-  if (props.data.status === 'ON_LIVE'){
+  if (props.data.status === 'IN_PLAY'){
+    const date = new Date(props.data.utcDate)
     status = [
       <span style={{color:'green'}}>LIVE</span>,
+      <span style={{}}>{`${Math.floor((Date.now() - date)/1000/60)}'`}</span>,
       <div className={classes.live}></div>,
     ]
   }
