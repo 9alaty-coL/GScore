@@ -21,6 +21,7 @@
     }
     .linkActive{
         box-shadow: 0px 0px 10px 2px #333;
+        border: 2px black solid;
     }
 
     &>.NavLink:hover{

@@ -1,0 +1,28 @@
+.closeBtn{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    &::before{
+        top:50%;
+        transform: translateY(-50%);
+        width: 1.5rem;
+        height: 0.2rem;
+        background-color: rgb(142, 206, 232);
+        border-radius: 1rem;
+        content: "";
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+    &::after{
+        top:50%; 
+        transform: translateY(-50%);
+        width: 1.5rem;
+        height: 0.2rem;
+        background-color: rgb(142, 206, 232);
+        border-radius: 1rem;
+        content: "";
+        position: absolute;
+        transform: rotate(45deg);
+    }
+}

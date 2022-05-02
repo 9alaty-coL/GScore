@@ -1,0 +1,28 @@
+.backdrop{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #fff;
+    opacity: 0.1;
+}
+
+.overlay{
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    // transition: 1s ease;
+    animation: ease-to-top ease 0.4s;
+}
+
+@keyframes ease-to-top {
+    0%{
+      top: 70%;
+      opacity: 0.5;
+    }
+    100%{
+        top: 40%;
+    }
+  }

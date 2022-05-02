@@ -1,7 +1,22 @@
 .card {
   padding: 1rem;
+  padding-top: 0.3rem;
   margin: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  background-color: white;
+  background-color:rgba(14, 46, 78, 0.932);
 }
+
+.close{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.close img{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+

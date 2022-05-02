@@ -1,8 +1,9 @@
 .header {
+  border-bottom: solid #000 3px;
   background: linear-gradient(
     to top,
     rgba(114, 105, 230, 0.774) 0%,
-    rgb(5, 5, 238) 40%
+    rgb(5, 5, 238) 30%
   );
   display: flex;
   align-items: center;
@@ -23,6 +24,36 @@
     .link {
       text-decoration: none;
       background-color: red;
+    }
+  }
+
+  .info{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .name{
+      color:rgba(255, 255, 255, 0.9);
+      font-size: 1.5rem;
+      margin: 0px 1.5rem;
+      font-weight: bold;
+    }
+    .options{
+      margin:  0px 3rem 0px 0.5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .coins{
+        color: yellow;
+        border-bottom: 1px #aaa solid;
+        padding-bottom: 0.4rem;
+      }
+      .logout{
+        color: #aaa;
+        text-decoration: none;
+      }
     }
   }
 
@@ -96,7 +127,7 @@
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 13500px) {
   .header {
     .dropdown {
       display: flex;
@@ -123,6 +154,12 @@
       transition: ease-in 0.3s;
       //   height: auto;
     }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .cur{
+    display: none;
   }
 }
 

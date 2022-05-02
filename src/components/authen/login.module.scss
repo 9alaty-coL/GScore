@@ -1,0 +1,60 @@
+.login{
+    background-color: #129;
+    border-radius: 6px;
+    padding: 0.5rem 4rem;
+    border: 1px solid white;
+    &>h1{
+        font-size: 3rem;
+        background-color: rgb(183, 180, 187);
+        text-align: center;
+        color: azure;
+        margin: 1rem;
+        // background: linear-gradient(to right, #009DAB 0%, #333 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: rgb(0, 0, 0);
+    }
+    &>content >.un, .pw{
+        margin-bottom: 2rem;
+        display: flex;
+        span{
+            color: white;
+            padding-right: 1rem;
+        }
+        input{
+            font-size: 1.1rem;
+        }
+    }
+    &>content >.un{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    &>content>.sbmBtn{
+        display: flex;
+        justify-content: center;
+        button{
+            background-color: rgb(0, 157, 255);
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.8rem;
+            width: 100%;
+            margin-bottom: 2rem;
+            &:hover{
+                background-color: rgb(0, 208, 255);
+            }
+        }
+    }
+    &>.register{
+        border-top: solid #eee 1px;
+        padding: 1rem 0rem;
+        text-align: center;
+        &>span{
+            color: white;
+            &>.link{
+                color: white;
+            }
+        }
+    }
+}
