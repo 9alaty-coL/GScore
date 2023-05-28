@@ -31,7 +31,6 @@ Visit the [Repository](https://github.com/9alaty-coL/Api.Gscore) for more detail
 ## Responsive
 <img src="./screenshots/responsive.PNG" width="500px">
 
-### Deployment: [GScore](https://gscore.netlify.app/)
 
 <img src="./screenshots/home.jpeg" width="500px">
 <img src="./screenshots/matches.jpeg" width="500px">
